@@ -1,0 +1,70 @@
+ 
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    overflow:hidden;
+    background-color: blue;
+    margin-right: 600px;
+    display: flex;
+}
+li{
+    float: center;
+    font-size: small;
+   
+    text-transform: uppercase;
+    align-items: flex-start;
+}
+li a{
+    display: block;
+    color: aliceblue;
+    text-decoration:none;
+    padding: 18px;
+     
+}
+li a:hover {
+    background-color: rgb(127, 255, 197);
+    content: icon;
+}
+ 
+.grid {
+    display: flex;
+    grid-template-columns: 33% 33% 33%;
+}
+#myHeader{
+    text-align: center;
+    width: 20px;
+    height: 200px;
+}
+
+/* this is create heart animation*/
+span {
+    background: url("heart.webp");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 5s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      
+     }
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+      
+    }
+  }

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>home page</title>
+        <meta name="description" content="Free Web tutorials">
+        <meta>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Setting">Setting</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#Peple">People</a></li>
+        </ul>
+        <button onclick="myfunction()">Hide_letter</button>
+        <button onclick="showElements()">Show_Ele</button>
+        <br><br>
+        <div class = 'link1'></div>
+        <iframe src="back.html" frameborder="0"></iframe>
+        <div class="grid">
+          <div>
+            
+            <h2 class="hide">London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div>
+             
+            <h2 class="hide">Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div>
+            <h2 class="hide">Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div>
+        </div>
+        <script>
+          function myfunction() {
+            var x = document.getElementsByClassName("hide");
+            for (var i = 0; i < x.length; i++) {
+              x[i].style.display='none';
+            }
+          }
+          function myfunction() {
+            var x = document.getElementsByClassName("link1");
+             
+            x.style.display='none';
+            
+          }
+          function showElements() {
+            var elements = document.getElementsByClassName("hide");
+            for (var i = 0; i < elements.length; i++) {
+              elements[i].style.display = 'block'; // Make the elements visible again
+            }
+          }
+        </script>
+    </body>
+</html>
